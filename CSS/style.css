@@ -160,3 +160,24 @@ footer{
     height: 100px;
     background-color:rgb(249, 247, 243);
 }
+
+
+
+/* history page */
+
+.history-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.history-div{
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
