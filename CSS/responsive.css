@@ -1,0 +1,21 @@
+@media screen and (max-width:768px) {
+    .donate-card{
+        flex-direction: column;
+    }
+    .donate-card>img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .nav-title{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .nav{
+        gap: 1rem;
+    }
+    .nav-amount{
+        font-size: 0.9rem;
+    }
+}

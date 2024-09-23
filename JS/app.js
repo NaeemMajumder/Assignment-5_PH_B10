@@ -40,3 +40,11 @@ for(let btn of header_btn){
         section.classList.remove("hidden");
     })
 }
+
+
+
+// blog button
+let blog = document.getElementById("blog");
+blog.addEventListener("click",()=>{
+    window.location.href = "blog.html"
+})
