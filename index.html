@@ -14,11 +14,14 @@
     <!-- css file link (style.css) -->
     <link rel="stylesheet" href="CSS/style.css">
 
+    <!-- css file link (model.css) -->
+    <link rel="stylesheet" href="CSS/modal.css">
+
 </head>
 <body>
 
     <!-- header -->
-    <header class="">
+    <header>
 
         <!-- nav section -->
         <nav class="">
@@ -30,15 +33,15 @@
                 </div>
                 <div class="flex nav-currency">
                     <img width="32" height="32" src="https://img.icons8.com/retro/32/cheap-2.png" alt="cheap-2"/>
-                    <h5 class="nav-amount"><span>5500</span> BDT</h5>
+                    <h5 class="nav-amount"><span id="nav-amount">5500</span> BDT</h5>
                 </div>
             </div>
         </nav>
 
         <!-- button section -->
-        <section class="button-section width flex">
-            <button class="green-btn">Donation</button>
-            <button class="green-btn history">History</button>
+        <section class="button-section flex">
+            <button class="green-btn header-btn">Donation</button>
+            <button class="green-btn history header-btn">History</button>
         </section>
 
     </header>
@@ -46,7 +49,7 @@
     <!-- main -->
     <main>
 
-        <section class="donate width padding flex">
+        <section id="Donation" class="donate width padding flex btn-section">
 
             <!-- donate card 1 -->
             <div class="donate-card flex">
@@ -54,14 +57,14 @@
                 <div class="flex donate-card-writing">
                     <div class="flex">
                         <img width="25" height="25" src="https://img.icons8.com/retro/25/cheap-2.png" alt="cheap-2"/>
-                        <h5><span>5500</span> BDT</h5>
+                        <h5><span id="card-amount-1">5500</span> BDT</h5>
                     </div>
                     <h2>Donate for Flood at Noakhali, Bangladesh</h2>
                     <p>
                         The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                     </p>
-                    <input placeholder="Write Donation Amount" type="text">
-                    <button class="green-btn">Donate Now</button>
+                    <input id="card-input-1" placeholder="Write Donation Amount" type="text">
+                    <button id="card-button-1" class="btn green-btn">Donate Now</button>
                 </div>
             </div>
 
@@ -71,14 +74,14 @@
                 <div class="flex donate-card-writing">
                     <div class="flex">
                         <img width="25" height="25" src="https://img.icons8.com/retro/25/cheap-2.png" alt="cheap-2"/>
-                        <h5><span>5500</span> BDT</h5>
+                        <h5><span id="card-amount-2">5500</span> BDT</h5>
                     </div>
                     <h2>Donate for Flood Relief in Feni,Bangladesh</h2>
                     <p>
                         The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
                     </p>
-                    <input placeholder="Write Donation Amount" type="text">
-                    <button class="green-btn">Donate Now</button>
+                    <input id="card-input-2" placeholder="Write Donation Amount" type="text">
+                    <button id="card-button-2" class="btn green-btn">Donate Now</button>
                 </div>
             </div>
 
@@ -88,17 +91,33 @@
                 <div class="flex donate-card-writing">
                     <div class="flex">
                         <img width="25" height="25" src="https://img.icons8.com/retro/25/cheap-2.png" alt="cheap-2"/>
-                        <h5><span>5500</span> BDT</h5>
+                        <h5><span id="card-amount-3">5500</span> BDT</h5>
                     </div>
                     <h2>Aid for Injured in the Quota Movement</h2>
                     <p>
                         The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
                     </p>
-                    <input placeholder="Write Donation Amount" type="text">
-                    <button class="green-btn">Donate Now</button>
+                    <input id="card-input-3" placeholder="Write Donation Amount" type="text">
+                    <button id="card-button-3" class="btn green-btn">Donate Now</button>
                 </div>
             </div>
 
+        </section>
+
+        <section id="History" class="hidden btn-section width padding ">
+            <h1>Hello World</h1>
+        </section>
+
+        <section id="modal-popup" class="modal-popup">
+            <div class="modal">
+                <h1>Congratulation!</h1>
+                <img width="64" height="64" src="https://img.icons8.com/nolan/64/coin-in-hand.png" alt="coin-in-hand"/>
+                <p>You Have Donated for Humankind</p>
+                <h3>Successfully</h3>
+                <div>
+                    <button id="close-modal" class="green-btn history">close confirmation</button>
+                </div>
+            </div>
         </section>
 
     </main>
@@ -107,6 +126,9 @@
     <footer>
 
     </footer>
-    
+
+    <!-- javaScript link -->
+    <script src="JS/function.js"></script>
+    <script src="JS/app.js"></script>    
 </body>
 </html>

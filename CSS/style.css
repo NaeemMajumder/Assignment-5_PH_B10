@@ -35,11 +35,17 @@ body{
     color: var(--black);
     cursor: pointer;
 }
+.hidden{
+    display: none !important;
+}
 
 /* main code */
 
 header{
     height: 240px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 nav{
     background-color:rgb(249, 247, 243);
@@ -70,7 +76,7 @@ nav{
     align-items: end;
     padding-bottom: 1.5rem;
     gap: 1rem;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(10px);
 }
 .history{
     background-color: transparent;

@@ -1,0 +1,24 @@
+.modal-popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal{
+    padding: 2rem 4rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    border-radius: 10px;
+}
