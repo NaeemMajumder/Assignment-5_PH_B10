@@ -1,0 +1,156 @@
+
+
+/* common code */
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lexend", sans-serif;
+}
+:root{
+    --black:#111111;
+    --amount:#111111B3;
+    --button:rgb(180, 244, 97);
+}
+.width{
+    max-width: 1350px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.padding{
+    padding: 0 1.5rem;
+}
+.green-btn{
+    padding: 0.75rem 1.75rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--button);
+    color: var(--black);
+    cursor: pointer;
+}
+
+/* main code */
+
+header{
+    height: 240px;
+}
+nav{
+    background-color:rgb(249, 247, 243);
+    height: 50%;
+}
+.nav{
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo,.nav-currency{
+    align-items: center;
+    gap: 1rem;
+}
+.nav-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--black);
+}
+.nav-amount{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--amount);
+}
+.button-section{
+    height: 50%;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 1.5rem;
+    gap: 1rem;
+    backdrop-filter: blur(100px);
+}
+.history{
+    background-color: transparent;
+    border: 1px solid rgba(17, 17, 17, 0.3);
+    color: #111111B3;
+    transition-duration: 0.4s;
+}
+.history:hover{
+    background-color: #1111110c;
+}
+
+
+/* main section */
+
+.donate{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.donate-card{
+    padding: 2rem;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 16px;
+    gap: 2rem;
+}
+.donate-card-writing{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1rem;
+}
+.donate-card-writing div{
+    padding: 1rem;
+    gap: 0.5rem;
+    align-items: center;
+    background-color: rgba(17, 17, 17, 0.05);
+    border: none;
+    border-radius: 8px;
+}
+.donate-card-writing div h5{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--amount);
+}
+.donate-card-writing h2{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--black);
+}
+.donate-card-writing p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--amount);
+    line-height: 2;
+}
+.donate-card-writing input{
+    width: 100%;
+    padding: 1.25rem;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 300;
+}
+.donate-card-writing input::placeholder{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Lexend", sans-serif;
+    color: #11111166;
+}
+.donate-card-writing button{
+    width: 100%;
+    padding: 1.15rem 0;
+}
+
+/* footer */
+footer{
+    margin-top: 5rem;
+    height: 100px;
+    background-color:rgb(249, 247, 243);
+}
